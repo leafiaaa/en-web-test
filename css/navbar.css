@@ -163,7 +163,7 @@
   right: -280px;
   width: 260px;
   height: calc(100vh - 64px);
-  background: var(--color-surface);
+  /* background: var(--color-surface); */
   box-shadow: var(--shadow-xl);
   z-index: var(--z-overlay);
   /* padding: var(--space-6) var(--space-5); */
@@ -226,9 +226,9 @@
   z-index: var(--z-overlay);
 }
 
-.navbar__overlay.is-open {
+/* .navbar__overlay.is-open {
   display: block;
-}
+} */
 
 /* ===== Products mega menu ===== */
 .navbar__has-mega {

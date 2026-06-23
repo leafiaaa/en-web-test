@@ -9,7 +9,7 @@
   align-items: center;
   height: 64px;
   padding: 0 var(--space-8);
-  background: rgba(255, 255, 255, 0); /* ← change to 0 */
+  background: rgba(255, 255, 255, 95); /* ← change to 0 */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: none; /* ← start with no shadow */
@@ -163,7 +163,7 @@
   right: -280px;
   width: 260px;
   height: calc(100vh - 64px);
-  /* background: var(--color-surface); */
+  background: var(--color-surface);
   box-shadow: var(--shadow-xl);
   z-index: var(--z-overlay);
   /* padding: var(--space-6) var(--space-5); */

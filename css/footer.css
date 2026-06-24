@@ -193,7 +193,7 @@
 }
 .footer-subtitle{
   font-size: var(--scale-sm);
-  color: var(--color-blue-muted);
+  color: var(--color-blue-active);
 }
 .footer-address{
   font-size: var(--scale-sm);

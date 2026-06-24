@@ -1,0 +1,199 @@
+/* ==========================================================================
+   TEXT SIZES & WEIGHTS
+   All font-size and font-weight declarations extracted from component files.
+   Keep this file imported after tokens.css.
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   HERO
+-------------------------------------------------------------------------- */
+
+.hero__title {
+  font-weight: var(--weight-semibold);
+}
+
+.hero__subhead {
+  font-weight: var(--weight-mono-medium);
+  font-size: var(--scale-xl);
+}
+
+.hero__quote {
+  font-weight: var(--weight-medium);
+  font-size: var(--scale-sm);
+}
+
+.hero__cta {
+  font-size: var(--scale-base);
+  font-weight: var(--weight-semibold);
+}
+
+.skills__title {
+  font-weight: var(--weight-medium);
+  font-size: var(--scale-2xl);
+}
+
+.skill-card__title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-lg);
+}
+
+.skill-card__more {
+  font-size: var(--scale-xs);
+  font-weight: var(--weight-semibold);
+}
+
+.challenge__title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-xl);
+}
+
+.challenge__subtitle {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-lg);
+}
+
+
+/* --------------------------------------------------------------------------
+   CTA
+-------------------------------------------------------------------------- */
+
+.cta__title {
+  font-weight: var(--weight-mono-medium);
+  font-size: 39px;
+}
+
+.cta__button {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-sm);
+}
+
+.cta__name {
+  font-weight: var(--weight-bold);
+  font-size: var(--scale-base);
+}
+
+.cta__email,
+.cta__phone {
+  font-size: var(--scale-sm);
+}
+
+.cta__maplink {
+  font-weight: var(--weight-medium);
+}
+
+
+/* --------------------------------------------------------------------------
+   NAVBAR
+-------------------------------------------------------------------------- */
+
+.navbar__links a {
+  font-size: var(--scale-sm);
+  font-weight: var(--weight-medium);
+}
+
+.lang-toggle {
+  font-size: var(--scale-sm);
+  font-weight: var(--weight-medium);
+}
+
+.lang-dropdown li button {
+  font-size: var(--scale-sm);
+  font-weight: var(--weight-medium);
+}
+
+.navbar__drawer ul li a {
+  font-size: var(--scale-base);
+  font-weight: var(--weight-medium);
+}
+
+.drawer-lang button {
+  font-size: var(--scale-xs);
+  font-weight: var(--weight-semibold);
+}
+
+.mega__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.mega__link {
+  font-size: 1rem;
+}
+
+.drawer-sub a {
+  font-size: 0.9rem;
+}
+
+.navbar__cta {
+  font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------
+   FEATURES
+-------------------------------------------------------------------------- */
+
+.bpm .bpm__title {
+  font-size: var(--scale-3xl);
+  font-weight: var(--weight-mono-medium);
+}
+
+.bpm-module__heading {
+  font-size: var(--scale-xl);
+  font-weight: var(--weight-mono-medium);
+}
+
+.bpm-module__list strong {
+  font-weight: var(--weight-bold);
+}
+
+.usecase__title {
+  font-size: var(--scale-lg);
+  font-weight: var(--weight-mono-medium);
+}
+
+.uc-feature__tab {
+  font-size: var(--scale-base);
+  font-weight: var(--weight-mono-regular);
+}
+
+.uc-feature__list strong {
+  font-weight: var(--weight-bold);
+}
+
+.modules-text {
+  font-size: var(--scale-lg);
+}
+
+
+/* --------------------------------------------------------------------------
+   FOOTER
+-------------------------------------------------------------------------- */
+
+.footer__phone {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-sm);
+}
+
+.footer__heading {
+  font-weight: var(--weight-mono-medium);
+  font-size: var(--scale-sm);
+}
+
+.footer__links a {
+  font-size: var(--scale-sm);
+}
+
+.footer__region {
+  font-weight: var(--weight-semibold);
+  font-size: var(--scale-sm);
+}
+
+.footer__legal a {
+  font-size: var(--scale-xs);
+}
+
+.footer__copy {
+  font-size: var(--scale-xs);
+}

@@ -191,3 +191,11 @@
     height: 90px;
   }
 }
+.footer-subtitle{
+  font-size: var(--scale-sm);
+  color: var(--color-blue-muted);
+}
+.footer-address{
+  font-size: var(--scale-sm);
+  color:var(--color-ink);
+}

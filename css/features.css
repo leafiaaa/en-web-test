@@ -2,7 +2,7 @@
    BPM MODULES — side-by-side zigzag
 =========================== */
 .bpm .bpm__title {
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
+  font-family: var(--font-en), var(--font-tw), var(--font-th), sans-serif;
   font-size: var(--scale-3xl);
   font-weight: var(--weight-mono-medium);
   line-height: var(--lh-en-heading);
@@ -337,4 +337,17 @@
     transform: none;
     transition: none;
   }
+}
+.uc-feature__arrow{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+  align-items:center;
+}
+.uc-feature__arrow svg {
+  transition: transform var(--transition-base);
+}
+
+.uc-feature.is-open .uc-feature__arrow svg {
+  transform: rotate(180deg);
 }

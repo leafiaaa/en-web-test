@@ -149,8 +149,8 @@
 }
 
 .usecase__title {
-  font-size: var(--scale-lg);
-  font-weight: var(--weight-mono-medium);
+  font-size: var(--scale-2xl);
+  font-weight: var(--weight-mono-bold);
 }
 
 .uc-feature__tab {

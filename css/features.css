@@ -344,7 +344,5 @@
  margin: 0 0 var(--space-4);
   text-align: start;
   font-family: var(--font-en), sans-serif;
-  font-weight: var(--weight-bold);
   color: var(--color-ink);
-  font-size:var(--scale-3xl);
 }

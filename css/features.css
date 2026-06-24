@@ -351,3 +351,12 @@
 .uc-feature.is-open .uc-feature__arrow svg {
   transform: rotate(180deg);
 }
+.usecase__title {
+  display:block;
+ margin: 0 0 var(--space-4);
+  text-align: start;
+  font-family: var(--font-en), sans-serif;
+  font-weight: var(--weight-bold);
+  color: var(--color-ink);
+  font-size:var(--scale-2xl);
+}

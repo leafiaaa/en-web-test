@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/text_sizes.css">
+    <link rel="stylesheet" href="css/text_sizes.css" />
     <title>Document</title>
   </head>
   <body>
@@ -44,7 +47,6 @@
             <div class="bpm-module__body reveal reveal--left">
               <h3 class="bpm-module__heading">
                 <span>eForm Designer</span>
-              
               </h3>
               <ul class="bpm-module__list text-body">
                 <li>
@@ -74,7 +76,6 @@
             <div class="bpm-module__body reveal reveal--right">
               <h3 class="bpm-module__heading">
                 <span>eForm Submission</span>
-               
               </h3>
               <ul class="bpm-module__list text-body">
                 <li>
@@ -114,7 +115,6 @@
             <div class="bpm-module__body reveal reveal--left">
               <h3 class="bpm-module__heading">
                 <span>eForm Report</span>
-              
               </h3>
               <ul class="bpm-module__list text-body">
                 <li>
@@ -140,7 +140,6 @@
             <div class="bpm-module__body reveal reveal--right">
               <h3 class="bpm-module__heading">
                 <span>eForm Analysis</span>
-             
               </h3>
               <ul class="bpm-module__list text-body">
                 <li>
@@ -168,97 +167,277 @@
       </div>
     </section>
 
-    <section class="usecase">
-      <div class="usecase__inner">
-        <span class="usecase__title"
+    <section class="techniques">
+      <div class="techniques__inner">
+        <span class="techniques__title"
           >xNinja Specialized Techniques for Smarter Workflows</span
         >
 
-        <div class="usecase__frame">
-                    <div class="skill_section__video">
-  <iframe
-    class="skill_section__media"
-    src="https://www.youtube.com/embed/NPxpjpz5WTE?autoplay=1&mute=1&loop=1&playlist=NPxpjpz5WTE&controls=1&playsinline=1&rel=0&modestbranding=1"
-    title="xNinja demo"
-    style="width:100%; aspect-ratio:16/9; border:0; display:block;"
-    allow="autoplay; encrypted-media; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+        <!-- Full-width video block -->
+        <div class="techniques__video">
+          <iframe
+            class="techniques__video-media"
+            src="https://www.youtube.com/embed/NPxpjpz5WTE?autoplay=1&mute=1&loop=1&playlist=NPxpjpz5WTE&controls=1&playsinline=1&rel=0&modestbranding=1"
+            title="xNinja demo"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-          <!-- Right: auto-cycling feature accordion -->
-          <div class="usecase__features" id="usecaseFeatures">
-            <!-- Feature 01 -->
-            <div class="uc-feature is-open" data-uc="01">
-              <button
-                class="uc-feature__tab"
-                type="button"
-                aria-expanded="true"
-              >
-                <div class="uc-feature__arrow">
-                <span>01 DESIGN EFORMS WITHIN SECONDS</span>
-                      <svg width="28px" height="28px"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
+        <div class="techniques__groups">
+          <!-- Group 1: eForm Design -->
+          <article class="tech-group">
+            <h3 class="tech-group__heading">Design eForms Within Seconds</h3>
+            <div class="tech-group__frame">
+              <div class="tech-group__media">
+                <img
+                  class="tech-group__image"
+                  src="assets/images/01_BPM_AccelerateDigitalization.png"
+                  alt="Accelerate Digitalization"
+                />
+              </div>
+
+              <div class="tech-group__accordion" data-tech-group>
+                <div
+                  class="tech-item is-open"
+                  data-image="assets/images/01_BPM_AccelerateDigitalization.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="true"
+                  >
+                    <span class="tech-item__label"
+                      >Accelerate Digitalization</span
+                    >
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Generate ready-to-use eForms in seconds.
+                    </p>
+                  </div>
                 </div>
-              </button>
-              <div class="uc-feature__detail">
-                <ul class="uc-feature__list text-body">
-                  <li>
-                    <strong>Accelerate Digitalization:</strong>
-                    <span>Generate ready-to-use eForms in seconds.</span>
-                  </li>
-                  <li>
-                    <strong>Reduce Manual Effort &amp; Human Errors:</strong>
-                    <span
-                      >Eliminate repetitive design tasks and minimize
-                      configuration mistakes.</span
-                    >
-                  </li>
-                  <li>
-                    <strong>Break Language Barriers:</strong>
-                    <span>Create forms in any language.</span>
-                  </li>
-                  <li>
-                    <strong>Maintain Design Consistency:</strong>
-                    <span>Follow your preferred design style.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- Feature 02 -->
-            <div class="uc-feature" data-uc="02">
-              <button
-                class="uc-feature__tab"
-                type="button"
-                aria-expanded="false"
-              >
-              <div class="uc-feature__arrow">
-                <span>02 INTELLIGENT OCR &amp; DATA EXTRACTION</span>
-                      <svg width="28px" height="28px"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg></div>
-              </button>
-              <div class="uc-feature__detail">
-                <ul class="uc-feature__list text-body">
-                  <li>
-                    <strong>Convert Paper into Digital Data:</strong>
-                    <span
-                      >Extract information from scanned documents and images
-                      automatically.</span
+                <div
+                  class="tech-item"
+                  data-image="assets/images/02_BPM_ReduceManual.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Reduce Manual Effort &amp; Human Errors</span
                     >
-                  </li>
-                  <li>
-                    <strong>Reduce Manual Data Entry:</strong>
-                    <span
-                      >Eliminate repetitive typing and data transcription.</span
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Eliminate repetitive design tasks and minimize
+                      configuration mistakes.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/03_BPM_BreakLanguage.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Break Language Barriers</span
                     >
-                  </li>
-                </ul>
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">Create forms in any language.</p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/04_BPM_MaintainDesign.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Maintain Design Consistency</span
+                    >
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">Follow your preferred design style.</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+
+          <!-- Group 2: OCR -->
+          <article class="tech-group tech-group--reverse">
+            <h3 class="tech-group__heading">
+              Intelligent OCR &amp; Data Extraction
+            </h3>
+            <div class="tech-group__frame">
+              <div class="tech-group__media">
+                <img
+                  class="tech-group__image"
+                  src="assets/images/05_BPM_ConvertPaper.png"
+                  alt="Convert Paper into Digital Data"
+                />
+              </div>
+
+              <div class="tech-group__accordion" data-tech-group>
+                <div
+                  class="tech-item is-open"
+                  data-image="assets/images/05_BPM_ConvertPaper.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="true"
+                  >
+                    <span class="tech-item__label"
+                      >Convert Paper into Digital Data</span
+                    >
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Extract information from scanned documents and images
+                      automatically.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/06_BPM_ReduceManual.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Reduce Manual Data Entry</span
+                    >
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Eliminate repetitive typing and data transcription.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -268,5 +447,6 @@
     <script src="js/accordion.js"></script>
     <!-- <script src="js/skill-video.js"></script> -->
     <script src="js/reveal.js"></script>
+    <script src="js/tech-accordion.js"></script>
   </body>
 </html>

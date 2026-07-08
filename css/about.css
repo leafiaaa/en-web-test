@@ -345,3 +345,225 @@
   aspect-ratio: 16 / 7;
   border-radius: 0;
 }
+
+
+
+
+/* ==========================================================================
+   ABOUT US v2 — ADDITIONS
+   ========================================================================== */
+
+/* --- Story visual (image side) --- */
+.about-story__visual {
+  aspect-ratio: 4 / 3;
+  min-height: 0; /* overrides old min-height: 260px in favor of aspect-ratio */
+}
+
+.about-story__visual-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  display: block;
+}
+
+/* --- Story text panel (new — sits opposite the visual) --- */
+.about-story__panel {
+  position: relative;
+  padding: var(--space-8) var(--space-8) var(--space-6);
+  background: linear-gradient(
+    180deg,
+    var(--color-blue-subtle) 0%,
+    var(--color-surface) 45%
+  );
+  border-top: 4px solid var(--color-blue);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.about-story__panel .about-story__eyebrow {
+  color: var(--color-blue);
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.about-story__panel .about-story__text {
+  color: var(--color-ink);
+  font-weight: var(--weight-medium);
+}
+
+.about-story__panel .about-story__text strong {
+  color: var(--color-ink);
+  font-weight: var(--weight-bold);
+}
+
+/* --- Blue wash wrapper behind Vision + Goals --- */
+.about-bg-blue {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-blue-subtle) 0%,
+    var(--color-surface) 70%
+  );
+}
+
+/* --- Vision card: add top accent bar, restyle tag as static label --- */
+.about-vision__card {
+  border-top: 4px solid var(--color-blue);
+  padding-top: var(--space-6);
+}
+
+.about-vision__tag {
+  position: static;
+  display: block;
+  background: none;
+  color: var(--color-blue);
+  padding: 0;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-en);
+  font-size: var(--scale-lg);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
+  text-transform: none;
+  border-radius: 0;
+}
+
+.about-vision__card--slogan .about-vision__tag {
+  transform: none;
+  left: auto;
+}
+
+/* --- Ninja: swap dashed placeholder border for a clean image mount --- */
+.about-vision__ninja {
+  border-style: none;
+}
+
+.about-vision__ninja img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Organic dark backdrop blob behind the ninja */
+.about-vision__ninja-backdrop {
+  position: absolute;
+  z-index: var(--z-raised);
+  width: 260px;
+  height: 220px;
+  right: -80px;
+  bottom: -60px;
+  background: var(--color-ink);
+  border-radius: 62% 38% 55% 45% / 45% 55% 45% 55%;
+}
+
+/* --- Slogan heading block --- */
+.about-vision__heading {
+  margin-bottom: var(--space-10);
+}
+
+.about-vision__eyebrow {
+  display: block;
+  color: var(--color-ink-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.about-vision__slogan-line1 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.about-vision__slogan-line2 {
+  margin: 0;
+  background: linear-gradient(90deg, var(--color-ink), var(--color-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-vision__lightning {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+}
+
+/* --- Goals card accent variants --- */
+.about-goals__card--purple .placeholder {
+  border-color: #8b6cd9;
+  color: #8b6cd9;
+}
+
+.about-goals__card--green .about-goals__card-title {
+  color: var(--color-success);
+}
+.about-goals__card--green .placeholder {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.about-goals__card--orange .about-goals__card-title {
+  color: #d9720c;
+}
+.about-goals__card--orange .placeholder {
+  border-color: #d9720c;
+  color: #d9720c;
+}
+
+/* --- Lightweight sparkle/dot decoration (no images, cheap to render) --- */
+.about-decor {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-below);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.about-decor--visual {
+  z-index: var(--z-raised);
+}
+
+.about-decor__dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-blue-muted);
+  opacity: 0.5;
+}
+
+.about-decor__dot--sm {
+  width: 3px;
+  height: 3px;
+}
+
+.about-decor--visual .about-decor__dot {
+  background: var(--color-surface);
+  opacity: 0.6;
+}
+
+.about-decor__star {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  color: var(--color-blue-muted);
+  opacity: 0.6;
+}
+
+.about-decor__star--sm {
+  width: 8px;
+  height: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-vision__ninja-backdrop {
+    display: none;
+  }
+}

@@ -16,7 +16,6 @@
   -------------------------------------------------------------------------- */
 
   --font-en: "Montserrat", sans-serif;
-  --font-mono: "Montserrat", "SFMono-Regular", Consolas, monospace;
   --font-tw: "ChironGoRoundTC", "Noto Sans TC", sans-serif;
   --font-th: "Noto Sans Thai", sans-serif;
 
@@ -265,14 +264,6 @@
   letter-spacing: var(--ls-en-label);
   text-transform: uppercase;
   color: var(--color-ink-secondary);
-}
-
-/* --- Mono (code / tabular / technical accents) --- */
-.text-mono {
-  font-family: var(--font-mono);
-  font-size: var(--scale-sm);
-  font-weight: var(--weight-mono-regular);
-  line-height: var(--lh-en-body);
 }
 
 /* --- Highlight / Inline accent --- */

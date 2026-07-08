@@ -4,7 +4,6 @@
    Keep this file imported after tokens.css.
    ========================================================================== */
 
-
 /* --------------------------------------------------------------------------
    HERO
 -------------------------------------------------------------------------- */
@@ -14,7 +13,7 @@
 }
 
 .hero__subhead {
-  font-weight: var(--weight-mono-medium);
+  font-weight: var(--weight-medium);
   font-size: var(--scale-xl);
 }
 
@@ -53,13 +52,12 @@
   font-size: var(--scale-lg);
 }
 
-
 /* --------------------------------------------------------------------------
    CTA
 -------------------------------------------------------------------------- */
 
 .cta__title {
-  font-weight: var(--weight-mono-medium);
+  font-weight: var(--weight-medium);
   font-size: 39px;
 }
 
@@ -81,7 +79,6 @@
 .cta__maplink {
   font-weight: var(--weight-medium);
 }
-
 
 /* --------------------------------------------------------------------------
    NAVBAR
@@ -129,19 +126,18 @@
   font-weight: 600;
 }
 
-
 /* --------------------------------------------------------------------------
    FEATURES
 -------------------------------------------------------------------------- */
 
 .bpm .bpm__title {
   font-size: var(--scale-3xl);
-  font-weight: var(--weight-mono-medium);
+  font-weight: var(--weight-medium);
 }
 
 .bpm-module__heading {
   font-size: var(--scale-xl);
-  font-weight: var(--weight-mono-medium);
+  font-weight: var(--weight-medium);
 }
 
 .bpm-module__list strong {
@@ -155,7 +151,7 @@
 
 .uc-feature__tab {
   font-size: var(--scale-base);
-  font-weight: var(--weight-mono-regular);
+  font-weight: var(--weight-regular);
 }
 
 .uc-feature__list strong {
@@ -165,7 +161,6 @@
 .modules-text {
   font-size: var(--scale-lg);
 }
-
 
 /* --------------------------------------------------------------------------
    FOOTER
@@ -177,7 +172,7 @@
 }
 
 .footer__heading {
-  font-weight: var(--weight-mono-medium);
+  font-weight: var(--weight-medium);
   font-size: var(--scale-sm);
 }
 

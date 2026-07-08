@@ -84,9 +84,7 @@
 
 .hero__title {
   color: var(--color-ink);
-  font-family: var(
-    --font-mono
-  ); /* ← mono heading. Swap to var(--font-en) for Montserrat */
+  font-family: var(--font-en);
   font-weight: var(--weight-semibold);
   margin-top: var(--space-8);
   margin-bottom: 0;
@@ -102,8 +100,8 @@
 .hero__subhead {
   margin: var(--space-4) 0 0;
   color: var(--color-ink);
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
-  font-weight: var(--weight-mono-medium);
+  font-family: var(--font-en);
+  font-weight: var(--weight-medium);
   font-size: var(--scale-xl);
   background-color: #ffffff9c;
   padding: 10px 20px;
@@ -229,7 +227,7 @@
 .skills__title {
   margin: 0 0 var(--space-4);
   text-align: center;
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
+  font-family: var(--font-en);
   font-weight: var(--weight-medium);
   font-size: var(--scale-2xl);
   color: var(--color-ink);
@@ -362,7 +360,7 @@
 .skill-card__title {
   margin: 0 0 clamp(18px, 2.5vw, 26px);
   text-align: center;
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
+  font-family: var(--font-en);
   font-weight: var(--weight-semibold);
   font-size: var(--scale-lg);
   color: var(--color-blue);
@@ -639,7 +637,7 @@
 .challenge__title {
   margin: 0;
   text-align: center;
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
+  font-family: var(--font-en);
   font-weight: var(--weight-semibold);
   font-size: var(--scale-xl);
   color: var(--color-ink);
@@ -658,7 +656,7 @@
 .challenge__subtitle {
   margin: 0 0 var(--space-6);
   text-align: center;
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
+  font-family: var(--font-en);
   font-weight: var(--weight-semibold);
   font-size: var(--scale-lg);
   color: var(--color-ink);

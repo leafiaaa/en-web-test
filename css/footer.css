@@ -48,8 +48,8 @@
   color: var(--color-ink);
   transition: color var(--transition-base);
   flex-shrink: 0;
-  width:32px;
-  height:32px;
+  width: 32px;
+  height: 32px;
 }
 .footer__social a:hover {
   color: var(--color-blue);
@@ -77,8 +77,8 @@
 
 .footer__heading {
   margin: 0 0 var(--space-4);
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
-  font-weight: var(--weight-mono-medium);
+  font-family: var(--font-en), var(--font-tw), var(--font-th), sans-serif;
+  font-weight: var(--weight-medium);
   font-size: var(--scale-sm);
   color: var(--color-ink);
 }
@@ -191,11 +191,11 @@
     height: 90px;
   }
 }
-.footer-subtitle{
+.footer-subtitle {
   font-size: var(--scale-sm);
   color: var(--color-blue-active);
 }
-.footer-address{
+.footer-address {
   font-size: var(--scale-sm);
-  color:var(--color-ink);
+  color: var(--color-ink);
 }

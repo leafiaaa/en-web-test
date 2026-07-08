@@ -228,7 +228,7 @@
   margin: 0 0 var(--space-4);
   text-align: center;
   font-family: var(--font-en);
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-semibold);
   font-size: var(--scale-2xl);
   color: var(--color-ink);
 }

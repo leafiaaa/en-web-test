@@ -1,0 +1,117 @@
+/* ===== Articles / News ===== */
+.articles {
+  padding: clamp(48px, 7vw, 96px) 0;
+}
+
+.articles__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* Reuses .skills__title look; only overrides spacing below it */
+.articles__title {
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.articles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-surface) 0%,
+    var(--color-surface) 55%,
+    var(--color-danger-subtle) 100%
+  );
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.article-card__topbar {
+  display: block;
+  height: 8px;
+  background: var(--color-blue);
+}
+
+.article-card__body {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+  gap: var(--space-4);
+}
+
+.article-card__image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-sunken);
+  color: var(--color-ink);
+  font-family: var(--font-en);
+  font-weight: var(--weight-bold);
+  font-size: var(--scale-base);
+}
+
+.article-card__meta-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.article-card__badge {
+  flex: 0 0 auto;
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-blue);
+  color: var(--color-surface);
+  font-family: var(--font-en);
+  font-size: var(--scale-xs);
+  font-weight: var(--weight-semibold);
+}
+
+.article-card__dot {
+  flex: 0 0 auto;
+  width: 4px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-ink-tertiary);
+}
+
+.article-card__date {
+  color: var(--color-ink-tertiary);
+  font-size: var(--scale-xs);
+}
+
+.article-card__excerpt {
+  margin: 0;
+  color: var(--color-ink-secondary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .articles__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .articles__grid {
+    grid-template-columns: 1fr;
+  }
+}

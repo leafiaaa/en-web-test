@@ -3,6 +3,14 @@
   padding: 0;
   margin: 0;
 }
+
+/* Safety net so any image without its own sizing rule never overflows
+   its container on narrow screens. More specific rules below (e.g.
+   .story__visual img, .vision__mascot) override this as needed. */
+img {
+  max-width: 100%;
+  height: auto;
+}
 .story-intro {
   padding-block: var(--space-16) var(--space-8);
   padding-inline: var(--page-x);
@@ -44,6 +52,15 @@
   justify-content: center;
   position: relative;
   max-width: 580px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.story__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .story__visual-label {
@@ -68,8 +85,8 @@
   /* justify-content: center; */
   text-align: center;
   gap: var(--space-4);
-  max-height: 280px;
   max-width: 620px;
+  width: 100%;
 }
 
 .story__label {
@@ -95,6 +112,19 @@
   }
   .story__visual {
     min-height: 240px;
+    max-width: 100%;
+  }
+  .story__card {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .story-intro {
+    padding-block: var(--space-10) var(--space-6);
+  }
+  .story__visual {
+    min-height: 200px;
   }
 }
 
@@ -130,9 +160,15 @@
 }
 
 .goals__icon {
-  font-size: var(--scale-4xl);
   line-height: 1;
   margin-bottom: var(--space-2);
+}
+
+.goals__icon img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
 }
 
 .goals__title {
@@ -167,13 +203,22 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .goals {
+    padding-block: var(--space-10);
+  }
+  .goals__card {
+    padding: var(--space-6) var(--space-4);
+  }
+}
 /* ==========================================================================
    Vision Section
    ========================================================================== */
 
 .vision {
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
   padding-block: var(--space-64, 64px);
 }
 
@@ -184,7 +229,7 @@
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  /* gap: var(--space-40, 40px); */
+  gap: var(--space-40, 40px);
 }
 
 /* ---------- Content (left) ---------- */
@@ -263,6 +308,14 @@
 
 .vision__visual {
   position: relative;
+}
+
+.vision__mascot {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-inline: auto;
 }
 
 .media-grid {
@@ -345,11 +398,16 @@
   .vision__container {
     grid-template-columns: 1fr;
     text-align: center;
+    row-gap: var(--space-16, 16px);
   }
   .vision__heading-row {
     justify-content: center;
   }
   .vision__card {
+    margin-inline: auto;
+  }
+  .vision__visual {
+    max-width: 420px;
     margin-inline: auto;
   }
   .media-grid {
@@ -365,6 +423,22 @@
   .media-grid__item--right {
     grid-column: 1 / 3;
     grid-row: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision {
+    padding-block: var(--space-10, 40px);
+  }
+  .vision__mascot {
+    max-width: 280px;
+  }
+  .vision__card {
+    padding: var(--space-6, 16px) var(--space-6, 16px);
+  }
+  /* Decorative sparkles get cramped once the mascot is this small */
+  .vision__sparkle--3 {
+    display: none;
   }
 }
 .page-canvas {

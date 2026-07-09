@@ -78,7 +78,7 @@
 .footer__heading {
   margin: 0 0 var(--space-4);
   font-family: var(--font-en), var(--font-tw), var(--font-th), sans-serif;
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-bold);
   font-size: var(--scale-sm);
   color: var(--color-ink);
 }
@@ -100,6 +100,7 @@
   color: var(--color-ink-secondary);
   text-decoration: none;
   transition: color var(--transition-base);
+  font-weight: var(--weight-medium);
 }
 .footer__links a:hover {
   color: var(--color-blue);
@@ -192,10 +193,6 @@
   }
 }
 .footer-subtitle {
-  font-size: var(--scale-sm);
+  font-size: var(--scale-xs);
   color: var(--color-blue-active);
-}
-.footer-address {
-  font-size: var(--scale-sm);
-  color: var(--color-ink);
 }

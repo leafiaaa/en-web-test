@@ -17,8 +17,54 @@ img {
   max-width: 900px;
   margin-inline: auto;
   text-align: center;
+  position: relative;
+}
+.story-intro__heading {
+  margin-bottom: var(--space-8);
+  line-height: 1.15;
 }
 
+.story-intro__heading-line {
+  display: block;
+  font-size: var(--scale-4xl);
+  font-weight: var(--weight-bold);
+}
+
+.story-intro__heading-line--solid {
+  color: #14529b;
+}
+
+.story-intro__heading-line--gradient {
+  background: linear-gradient(177deg, #005cd3 0%, #70a4d5 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.story-intro__sparkle {
+  position: absolute;
+  color: var(--color-blue);
+  font-size: var(--scale-base);
+  pointer-events: none;
+}
+
+.story-intro__sparkle--1 {
+  top: 8%;
+  left: 6%;
+}
+
+.story-intro__sparkle--2 {
+  top: 20%;
+  right: 6%;
+}
+
+@media (max-width: 480px) {
+  .story-intro__heading-line {
+    font-size: var(--scale-2xl);
+  }
+  .story-intro__sparkle {
+    display: none; /* cramped at small sizes, same call as vision__sparkle--3 */
+  }
+}
 .story-intro__text {
   color: var(--color-ink);
   font-weight: var(--weight-semibold);

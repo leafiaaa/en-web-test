@@ -171,11 +171,11 @@
 
 .vision__label {
   display: block;
-  font-family: var(--font-mono), var(--font-tw), var(--font-th), sans-serif;
-  font-size: var(--text-sm, 14px);
-  font-weight: 700;
+  font-family: var(--font-en);
+  font-size: var(--scale-lg);
+  font-weight: var(--weight-bold);
   letter-spacing: 0.08em;
-  color: var(--color-muted, #6b7a94);
+  color: var(--color-muted, #728da0);
   margin-bottom: var(--space-8, 8px);
 }
 

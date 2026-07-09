@@ -380,3 +380,75 @@
     max-width: 100%;
   }
 }
+
+/* ==========================================================================
+   Responsive — Article Page
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .article-page {
+    padding: var(--space-6) var(--space-4) var(--space-16);
+  }
+
+  /* Collapse content + sidebar into a single column */
+  .article-page__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .article-page__content {
+    max-width: none;
+  }
+
+  /* Sidebar no longer sticks once it's stacked below content */
+  .article-page__aside {
+    position: static;
+    top: auto;
+  }
+
+  .article-page__header {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .article-page {
+    padding: var(--space-5) var(--space-3) var(--space-12);
+  }
+
+  .article-page__breadcrumb {
+    flex-wrap: wrap;
+    row-gap: var(--space-1);
+  }
+
+  .article-page__banner {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-lg);
+  }
+
+  .article-page__meta {
+    flex-wrap: wrap;
+    row-gap: var(--space-1);
+  }
+
+  .article-page__infobox,
+  .article-page__toc,
+  .article-page__share,
+  .article-page__cta-box {
+    padding: var(--space-4);
+  }
+
+  .article-page__table {
+    font-size: var(--scale-xs);
+  }
+  .article-page__table th,
+  .article-page__table td {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .article-page__cta-inline,
+  .article-page__video-link {
+    width: 100%;
+    justify-content: center;
+  }
+}

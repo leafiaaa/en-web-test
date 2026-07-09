@@ -140,20 +140,6 @@
   font-style: italic;
 }
 
-/* Photo / video placeholders */
-/* .article-page__media-placeholder {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius-lg);
-  background: var(--color-surface-sunken);
-  color: var(--color-ink-tertiary);
-  font-size: var(--scale-sm);
-  text-align: center;
-  padding: var(--space-4);
-} */
-/* Photo / video placeholders — image sizing */
 .article-page__media-placeholder img {
   width: 100%;
   max-width: 800px;
@@ -428,7 +414,7 @@
   }
 
   .article-page__banner {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16/ 9;
     border-radius: var(--radius-lg);
   }
 

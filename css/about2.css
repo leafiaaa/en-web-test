@@ -1,3 +1,9 @@
+* {
+  box-sizing: none;
+  padding: 0;
+  margin: 0;
+}
+
 .story {
   padding-block: var(--space-16);
   padding-inline: var(--page-x);
@@ -190,7 +196,7 @@
 .vision__heading-line {
   display: block;
   font-size: var(--scale-4xl);
-  font-weightvar(--weight-bold);
+  font-weight: var(--weight-bold);
 }
 
 .vision__heading-line--solid {

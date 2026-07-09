@@ -76,11 +76,6 @@
 .goals {
   padding-block: var(--space-16);
   padding-inline: var(--page-x);
-  background: linear-gradient(
-    180deg,
-    var(--color-blue-muted) 0%,
-    var(--color-surface) 60%
-  );
   text-align: center;
 }
 
@@ -372,4 +367,5 @@
 .goals {
   position: relative;
   z-index: 1;
+  background: transparent;
 }

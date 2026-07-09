@@ -476,3 +476,12 @@ body:has(.article-page) {
     max-width: 100%;
   }
 }
+.article-page__video-media {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin-inline: auto;
+  border-radius: var(--radius-lg);
+  border: 0;
+  display: block;
+}

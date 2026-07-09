@@ -54,8 +54,7 @@
   flex-direction: column;
   padding: var(--space-5);
   gap: var(--space-4);
-  background:linear-gradient(
-173deg, #E6F1FD 5%, #ffffff 40%);
+  background: linear-gradient(173deg, #e6f1fd 5%, #ffffff 40%);
 }
 
 .article-card__image {
@@ -116,4 +115,9 @@
   .articles__grid {
     grid-template-columns: 1fr;
   }
+}
+.article-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }

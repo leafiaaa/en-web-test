@@ -65,7 +65,6 @@
   margin-inline: auto;
   aspect-ratio: 16 / 10;
   border-radius: var(--radius-md);
-  background: var(--color-surface-sunken);
   color: var(--color-ink);
   font-family: var(--font-en);
   font-weight: var(--weight-bold);

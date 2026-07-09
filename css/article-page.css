@@ -141,7 +141,7 @@
 }
 
 /* Photo / video placeholders */
-.article-page__media-placeholder {
+/* .article-page__media-placeholder {
   display: grid;
   place-items: center;
   width: 100%;
@@ -152,7 +152,7 @@
   font-size: var(--scale-sm);
   text-align: center;
   padding: var(--space-4);
-}
+} */
 /* Photo / video placeholders — image sizing */
 .article-page__media-placeholder img {
   width: 100%;

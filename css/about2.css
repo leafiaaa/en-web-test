@@ -3,11 +3,28 @@
   padding: 0;
   margin: 0;
 }
+.story-intro {
+  padding-block: var(--space-16) var(--space-8);
+  padding-inline: var(--page-x);
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.story-intro__text {
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+}
+
+.story-intro__text + .story-intro__text {
+  margin-top: var(--space-4);
+}
 
 .story {
   padding-block: var(--space-16);
   padding-inline: var(--page-x);
   max-width: 1200px;
+  margin-inline: auto;
 }
 
 .story__grid {
@@ -367,6 +384,7 @@
   height: 100%;
   display: block;
 }
+.story-intro,
 .story,
 .vision,
 .goals {

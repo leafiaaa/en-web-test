@@ -21,13 +21,22 @@
     <link rel="stylesheet" href="../css/article-page.css" />
   </head>
   <body>
+    <div id="navbar-placeholder"></div>
 
     <main class="article-page">
       <!-- Breadcrumb -->
-   
+      <nav class="article-page__breadcrumb text-caption" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="blog.html">Blog</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Approval Workflow Automation</span>
+      </nav>
+
       <!-- Banner -->
       <div class="article-page__banner">
-   <img src="../assets/images/approvalWorkflow-banner.png" alt="Approval workflow automation banner">
+        <!-- Replace with real banner image: assets/images/blog/approval-workflow-banner.jpg -->
+        <span>Article Banner</span>
       </div>
 
       <!-- Title + meta -->
@@ -73,7 +82,7 @@
           </div>
 
           <div class="article-page__media-placeholder">
-           <img src="../assets/images/xNinja_AI_Expo26.jpg" alt="xNinja booth at AI Taiwan Future Commerce Expo 2026">
+            <span>Photo — xNinja booth at AI Taiwan Future Commerce Expo 2026</span>
           </div>
 
           <p class="text-body-lg">
@@ -126,7 +135,7 @@
           </p>
 
           <div class="article-page__media-placeholder">
-         <img src="../assets/images/approvalVsManual.png" alt="Approval vs Manual Form Workflow">
+            <span>Photo — approval documents and manual paperwork</span>
           </div>
 
           <h3 class="text-h3">
@@ -507,5 +516,8 @@
       </div>
     </main>
 
+    <div id="footer-placeholder"></div>
+
+    <script src="js/navbar.js"></script>
   </body>
 </html>

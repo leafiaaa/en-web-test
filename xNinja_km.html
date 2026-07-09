@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xNinja · Knowledge Management</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/cta.css" />
-    <link rel="stylesheet" href="css/text_sizes.css">
+    <link rel="stylesheet" href="css/text_sizes.css" />
   </head>
   <body>
     <div id="navbar-placeholder"></div>
@@ -150,143 +153,374 @@
       </div>
     </section>
 
-    <!-- Use case — auto-cycling accordion -->
-    <section class="usecase">
-      <div class="usecase__inner">
-        <span class="usecase__title"
+    <section class="techniques">
+      <div class="techniques__inner">
+        <span class="techniques__title"
           >xNinja Specialized Techniques for Practical Knowledge
           Application</span
         >
 
-        <div class="usecase__frame">
-          <!-- Left: video placeholder -->
+        <!-- Full-width video block -->
+        <div class="techniques__video">
+          <iframe
+            class="techniques__video-media"
+            src="https://www.youtube.com/embed/J8MCapx4dZc?autoplay=1&mute=1&loop=1&playlist=J8MCapx4dZc&controls=1&playsinline=1&rel=0&modestbranding=1"
+            title="xNinja demo"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-                      <div class="skill_section__video">
-  <iframe
-    class="skill_section__media"
-    src="https://www.youtube.com/embed/J8MCapx4dZc?autoplay=1&mute=1&loop=1&playlist=J8MCapx4dZc&controls=1&playsinline=1&rel=0&modestbranding=1"
-    title="xNinja demo"
-    style="width:100%; aspect-ratio:16/9; border:0; display:block;"
-    allow="autoplay; encrypted-media; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+        <div class="techniques__groups">
+          <!-- Group 1: Intelligent Knowledge Search -->
+          <article class="tech-group">
+            <h3 class="tech-group__heading">Intelligent Knowledge Search</h3>
+            <div class="tech-group__frame">
+              <div class="tech-group__media">
+                <img
+                  class="tech-group__image"
+                  src="assets/images/01_KM_ReduceSearch.png"
+                  alt="Reduce Search Time"
+                />
+              </div>
 
-          <!-- Right: features -->
-          <div class="usecase__features" id="usecaseFeatures">
-            <!-- 01 -->
-            <div class="uc-feature is-open" data-uc="01">
-              <button
-                class="uc-feature__tab"
-                type="button"
-                aria-expanded="true"
-              ><div class="uc-feature__arrow">
-                <span>01 INTELLIGENT KNOWLEDGE SEARCH</span>
-                
-                <svg width="28px" height="28px"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg></div>
-              </button>
-              <div class="uc-feature__detail">
-                <ul class="uc-feature__list text-body">
-                  <li>
-                    <strong>Reduce Search Time:</strong>
-                    <span
-                      >Quickly locate relevant information and source references
-                      from your knowledge base.</span
+              <div class="tech-group__accordion" data-tech-group>
+                <div
+                  class="tech-item is-open"
+                  data-image="assets/images/01_KM_ReduceSearch.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="true"
+                  >
+                    <span class="tech-item__label">Reduce Search Time</span>
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Quickly locate relevant information and source references
+                      from your knowledge base.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/02_KM_EnsureAccurate.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Ensure Accurate Answers</span
                     >
-                  </li>
-                  <li>
-                    <strong>Ensure Accurate Answers:</strong>
-                    <span
-                      >Generate responses based on authorized knowledge sources
-                      and access permissions.</span
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Generate responses based on authorized knowledge sources
+                      and access permissions.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/03_KM_VisualizeProcesses.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Visualize Processes Instantly</span
                     >
-                  </li>
-                  <li>
-                    <strong>Visualize Processes Instantly:</strong>
-                    <span
-                      >Convert documents, SOPs, and work instructions into
-                      flowcharts within seconds.</span
-                    >
-                  </li>
-                </ul>
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Convert documents, SOPs, and work instructions into
+                      flowcharts within seconds.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+          </article>
 
-            <!-- 02 -->
-            <div class="uc-feature" data-uc="02">
-              <button
-                class="uc-feature__tab"
-                type="button"
-                aria-expanded="false"
-              >
-                <div class="uc-feature__arrow">
-                <span>02 SMART SUMMARIZE</span>
-                <svg width="28px" height="28px"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg></div>
-              </button>
-              <div class="uc-feature__detail">
-                <ul class="uc-feature__list text-body">
-                  <li>
-                    <strong>Accelerate Information Consumption:</strong>
-                    <span
-                      >Transform lengthy documents into concise,
-                      easy-to-understand summaries.</span
+          <!-- Group 2: Smart Summarize -->
+          <article class="tech-group tech-group--reverse">
+            <h3 class="tech-group__heading">Smart Summarize</h3>
+            <div class="tech-group__frame">
+              <div class="tech-group__media">
+                <img
+                  class="tech-group__image"
+                  src="assets/images/04_KM_AccelerateInformation.png"
+                  alt="Accelerate Information Consumption"
+                />
+              </div>
+
+              <div class="tech-group__accordion" data-tech-group>
+                <div
+                  class="tech-item is-open"
+                  data-image="assets/images/04_KM_AccelerateInformation.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="true"
+                  >
+                    <span class="tech-item__label"
+                      >Accelerate Information Consumption</span
                     >
-                  </li>
-                  <li>
-                    <strong>Improve Knowledge Sharing:</strong>
-                    <span
-                      >Convert complex content into digestible knowledge for
-                      employees.</span
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Transform lengthy documents into concise,
+                      easy-to-understand summaries.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/05_KM_ImproveKnowledge.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Improve Knowledge Sharing</span
                     >
-                  </li>
-                  <li>
-                    <strong>Standardize Process Documentation:</strong>
-                    <span
-                      >Maintain consistent process documentation across
-                      departments.</span
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Convert complex content into digestible knowledge for
+                      employees.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/06_KM_StandardizeProcess.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Standardize Process Documentation</span
                     >
-                  </li>
-                </ul>
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Maintain consistent process documentation across
+                      departments.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+          </article>
 
-            <!-- 03 -->
-            <div class="uc-feature" data-uc="03">
-              <button
-                class="uc-feature__tab"
-                type="button"
-                aria-expanded="false"
-              >
-                <div class="uc-feature__arrow">
-                <span>03 INTELLIGENT RECOMMENDATIONS</span>
-                <svg width="28px" height="28px"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg></div>
-              </button>
-              <div class="uc-feature__detail">
-                <ul class="uc-feature__list text-body">
-                  <li>
-                    <strong>Generate Actionable Insights:</strong>
-                    <span
-                      >Transform organizational knowledge into practical
-                      recommendations.</span
+          <!-- Group 3: Intelligent Recommendations -->
+          <article class="tech-group">
+            <h3 class="tech-group__heading">Intelligent Recommendations</h3>
+            <div class="tech-group__frame">
+              <div class="tech-group__media">
+                <img
+                  class="tech-group__image"
+                  src="assets/images/07_KM_GenerateActionable.png"
+                  alt="Generate Actionable Insights"
+                />
+              </div>
+
+              <div class="tech-group__accordion" data-tech-group>
+                <div
+                  class="tech-item is-open"
+                  data-image="assets/images/07_KM_GenerateActionable.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="true"
+                  >
+                    <span class="tech-item__label"
+                      >Generate Actionable Insights</span
                     >
-                  </li>
-                  <li>
-                    <strong>Support Continuous Improvement:</strong>
-                    <span
-                      >Help optimize processes, policies, and operational
-                      performance.</span
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Transform organizational knowledge into practical
+                      recommendations.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="tech-item"
+                  data-image="assets/images/08_KM_SupportContinuous.png"
+                >
+                  <button
+                    class="tech-item__tab"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="tech-item__label"
+                      >Support Continuous Improvement</span
                     >
-                  </li>
-                </ul>
+                    <span class="tech-item__arrow">
+                      <svg
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="tech-item__detail">
+                    <p class="text-body">
+                      Help optimize processes, policies, and operational
+                      performance.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -294,7 +528,6 @@
     <div id="footer-placeholder"></div>
     <script src="js/i18n.js"></script>
     <script src="js/navbar.js"></script>
-    <!-- <script src="js/skill-video.js"></script> -->
     <script src="js/accordion.js"></script>
     <script src="js/reveal.js"></script>
   </body>

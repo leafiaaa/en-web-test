@@ -45,7 +45,7 @@
 
 .article-card__topbar {
   display: block;
-  height: 8px;
+  height: 12px;
   background: var(--color-blue);
 }
 
@@ -54,6 +54,8 @@
   flex-direction: column;
   padding: var(--space-5);
   gap: var(--space-4);
+  background:linear-gradient(
+173deg, #E6F1FD 5%, #ffffff 40%);
 }
 
 .article-card__image {

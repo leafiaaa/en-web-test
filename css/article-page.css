@@ -1,10 +1,39 @@
 /* ===== Article Page ===== */
+
+html:has(.article-page),
+body:has(.article-page) {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.article-page,
+.article-page *,
+.article-page *::before,
+.article-page *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.article-page__table-wrap,
+.article-page__table-wrap * {
+  max-width: none;
+}
+
+.article-page__content,
+.article-page__content p,
+.article-page__content a,
+.article-page__infobox-list,
+.article-page__toc a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .article-page {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--space-8) var(--space-6) var(--space-20);
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Breadcrumb */
@@ -231,7 +260,7 @@
 }
 .article-page__value-label {
   margin-top: var(--space-4) !important;
-  margin-bottom: calc(-1 * var(--space-2));
+  /* margin-bottom: calc(-1 * var(--space-2)); */
 }
 
 /* Inline CTA button inside article body */
@@ -414,7 +443,7 @@
   }
 
   .article-page__banner {
-    aspect-ratio: 16/ 9;
+    aspect-ratio: 21/ 9;
     border-radius: var(--radius-lg);
   }
 

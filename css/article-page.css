@@ -153,6 +153,16 @@
   text-align: center;
   padding: var(--space-4);
 }
+/* Photo / video placeholders — image sizing */
+.article-page__media-placeholder img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+  object-fit: cover;
+}
 .article-page__media-placeholder--video {
   background: color-mix(in srgb, var(--color-ink) 90%, transparent);
   color: var(--color-surface);
@@ -402,6 +412,9 @@
   .article-page__header {
     max-width: 100%;
   }
+  .article-page__media-placeholder img {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -443,5 +456,8 @@
   .article-page__video-link {
     width: 100%;
     justify-content: center;
+  }
+  .article-page__media-placeholder img {
+    max-width: 100%;
   }
 }

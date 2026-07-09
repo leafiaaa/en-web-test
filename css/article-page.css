@@ -34,13 +34,11 @@
   width: 100%;
   aspect-ratio: 21 / 9;
   border-radius: var(--radius-xl);
-  background: var(--color-surface-sunken);
   color: var(--color-ink);
   font-family: var(--font-en);
   font-weight: var(--weight-bold);
   font-size: var(--scale-xl);
   margin-bottom: var(--space-8);
-  overflow: hidden;
 }
 .article-page__banner img {
   width: 100%;

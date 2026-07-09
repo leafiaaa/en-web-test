@@ -357,7 +357,7 @@
 
 .page-canvas__bg {
   position: absolute;
-  inset: 0; /* stretches to fill .page-canvas exactly */
+  inset: 0;
   z-index: 0;
   pointer-events: none;
 }
